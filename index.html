@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vrinda Gupta | Cybersecurity & Data Enthusiast</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light Slate 50 */
+            color: #334155; /* Slate 700 */
+        }
+        /* Custom scrollbar for a nicer look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0; /* Slate 200 */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8; /* Slate 400 */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b; /* Slate 500 */
+        }
+        .section-heading {
+            position: relative;
+            display: inline-block;
+            font-size: 2.25rem; /* text-4xl */
+            font-weight: 700; /* font-bold */
+            color: #1e293b; /* Slate 900 */
+            margin-bottom: 2.5rem; /* mb-10 */
+        }
+        .section-heading::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 60%;
+            height: 4px;
+            background-color: #6366f1; /* Indigo 500 */
+            border-radius: 9999px; /* rounded-full */
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #6366f1, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card {
+            background-color: white;
+            border-radius: 1rem; /* rounded-xl */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+            padding: 1.5rem; /* p-6 */
+        }
+        @media (min-width: 640px) { /* sm */
+            .section-heading {
+                font-size: 3rem; /* sm:text-5xl */
+            }
+        }
+    </style>
+</head>
+<body class="leading-relaxed">
+
+    <!-- Navigation Bar (Optional but good for multi-page feel if more sections added) -->
+    <nav class="bg-white shadow-md py-4 px-6 md:px-12 fixed top-0 left-0 w-full z-50 rounded-b-xl">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-bold gradient-text">Vrinda Gupta</a>
+            <div class="space-x-6 hidden md:flex">
+                <a href="#about" class="text-gray-600 hover:text-indigo-600 transition duration-300">About</a>
+                <a href="#skills" class="text-gray-600 hover:text-indigo-600 transition duration-300">Skills</a>
+                <a href="#projects" class="text-gray-600 hover:text-indigo-600 transition duration-300">Projects</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition duration-300">Contact</a>
+            </div>
+            <!-- Mobile Menu Toggle (optional - can be added with JS) -->
+            <button class="md:hidden text-gray-600 hover:text-indigo-600 text-2xl">
+                &#9776; <!-- Hamburger icon -->
+            </button>
+        </div>
+    </nav>
+
+    <main class="pt-20"> <!-- Added padding-top to account for fixed nav -->
+        <!-- Hero Section -->
+        <section id="hero" class="relative bg-gradient-to-br from-indigo-500 to-purple-600 text-white py-24 md:py-36 px-6 overflow-hidden rounded-b-3xl shadow-xl">
+            <div class="max-w-4xl mx-auto text-center relative z-10">
+                <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-down">
+                    Hello, I'm <span class="block text-purple-200">Vrinda Gupta.</span>
+                </h1>
+                <p class="text-lg sm:text-2xl mb-8 font-light max-w-2xl mx-auto animate-fade-in-up">
+                    Blending Data Analysis insights and Digital Marketing agility with a deep passion for Cybersecurity.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-up-delay">
+                    <a href="#projects" class="bg-white text-indigo-700 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition duration-300 transform hover:scale-105 shadow-lg">
+                        See My Work
+                    </a>
+                    <a href="#contact" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-white hover:text-indigo-700 transition duration-300 transform hover:scale-105 shadow-lg">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+            <!-- Decorative shapes -->
+            <div class="absolute inset-0 z-0">
+                <div class="absolute w-64 h-64 bg-indigo-400 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob top-1/4 left-1/4"></div>
+                <div class="absolute w-64 h-64 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-2000 top-1/2 right-1/4"></div>
+                <div class="absolute w-64 h-64 bg-fuchsia-400 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-blob animation-delay-4000 bottom-1/4 left-1/2"></div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-16 md:py-24 px-6 max-w-6xl mx-auto">
+            <h2 class="section-heading text-center mx-auto mb-10">About Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="card p-8 bg-gray-50">
+                    <p class="text-lg mb-6 leading-relaxed">
+                        I'm a passionate and curious developer, driven by the desire to build impactful solutions. My journey has uniquely blended practical experience as a Junior Data Analyst and my background in Digital Marketing with a growing focus on cybersecurity. I thrive on exploring new technologies and constantly pushing my limits to learn and grow.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        My strength lies in problem-solving under pressure and spotting critical details – skills honed through real-world challenges, now passionately applied to the field of cybersecurity. I believe my holistic perspective on data and human behavior offers a distinct advantage in understanding and mitigating modern cyber threats.
+                    </p>
+                </div>
+                <div class="text-center">
+                    <img src="img.jpg" alt="Vrinda Gupta Professional Photo" class="w-full max-w-md h-auto mx-auto rounded-full shadow-lg border-4 border-indigo-200 object-cover">
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- My Edge Section -->
+        <section class="py-16 md:py-24 px-6 bg-blue-50">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="section-heading text-center mx-auto mb-10">My Unique Edge: From Data to Defense</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="card bg-white p-6 md:p-8 transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                        <h3 class="text-xl font-semibold mb-4 text-indigo-700">Digital Marketing Agility</h3>
+                        <p class="text-gray-700">
+                            My time in digital marketing taught me to keep my cool and figure things out fast when stuff went wrong. This translates directly to crisis management and rapid adaptation in high-pressure security scenarios.
+                        </p>
+                    </div>
+                    <div class="card bg-white p-6 md:p-8 transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                        <h3 class="text-xl font-semibold mb-4 text-indigo-700">Data Analyst Precision</h3>
+                        <p class="text-gray-700">
+                            As a Junior Data Analyst, I mastered anomaly detection and data interpretation. This meticulous approach is critical for identifying subtle threats and understanding complex attack patterns in security logs.
+                        </p>
+                    </div>
+                    <div class="card bg-white p-6 md:p-8 transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                        <h3 class="text-xl font-semibold mb-4 text-indigo-700">Cybersecurity Passion</h3>
+                        <p class="text-gray-700">
+                            My genuine interest in cybersecurity drives me to continuously learn and bridge my analytical and adaptive skills with core security principles to build resilient defenses and contribute to a safer digital world.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-16 md:py-24 px-6 max-w-6xl mx-auto">
+            <h2 class="section-heading text-center mx-auto mb-10">Skills & Expertise</h2>
+            <div class="card bg-white p-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3 text-indigo-700">Programming Languages</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>JavaScript</li>
+                            <li>HTML & CSS</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3 text-indigo-700">Web Technologies</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Frontend & Backend Development</li>
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>RESTful APIs</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3 text-indigo-700">Data & Analytics</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Data Cleaning & Analysis</li>
+                            <li>SQL Query Optimization</li>
+                            <li>Data Visualization</li>
+                            <li>Anomaly Detection</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3 text-indigo-700">Cybersecurity Interests</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Network Security Basics</li>
+                            <li>Web Application Security(OWASP Top 10)</li>
+                            <li>Cryptography Concepts</li>
+                            <li>Threat Analysis</li>
+                            <li>Security Automation (Scripting)</li>
+                            <li>Cloud Security Fundamentals</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3 text-indigo-700">Tools & Platforms</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Git & GitHub</li>
+                            <li>VS Code</li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16 md:py-24 px-6 bg-indigo-50 rounded-t-3xl shadow-inner">
+            <h2 class="section-heading text-center mx-auto mb-10">My Featured Work</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+                <!-- Project Card 1 -->
+                <div class="card p-6 border border-indigo-200 transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                    <h3 class="text-2xl font-semibold mb-4 gradient-text"> Project: UPES Sarthi</h3>
+                    <p class="text-gray-700 mb-4">
+                        A college community app designed for newcomers and freshers at UPES. It helps them find the best hostels and flats, locate nearby doctors, and get opinions and guidance from alumni and current students regarding their campus experience.
+                    </p>
+                    <img src="campus-image.jpg" alt="Project UPES SARTHI" class="w-full h-48 object-cover rounded-md mb-4 shadow-sm">
+                    <div class="flex justify-between items-center text-sm font-medium">
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full">MERN</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full">Data Analysis</span>
+                    </div>
+                    <div class="mt-4 flex gap-4">
+                        <a href="https://github.com/Jahnavi-Anand/College-Community-webApp.git" target="_blank" class="text-indigo-600 hover:text-indigo-800 flex items-center">
+                            <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.417 2.865 8.16 6.839 9.489.5.092.682-.217.682-.483 0-.237-.007-1.033-.01-1.706-2.782.603-3.37-1.34-3.37-1.34-.454-1.154-1.107-1.465-1.107-1.465-.907-.62.069-.608.069-.608 1.004.07 1.532 1.03 1.532 1.03.89 1.529 2.336 1.088 2.906.833.09-.648.351-1.088.636-1.338-2.22-.254-4.555-1.11-4.555-4.943 0-1.09.39-1.98.104-2.685.109-.272.469-1.272-.1-2.656 0 0 .82-.266 2.705 1.025.779-.217 1.61-.326 2.44-.33c.83.004 1.66.113 2.44.33 1.884-1.291 2.705-1.025 2.705-1.025-.572 1.384-.212 2.384-.1 2.656.39 1.706.01 2.595 0 2.685.083.705.47 1.595.39 2.685 0 3.842-2.339 4.685-4.562 4.935-.357.307-.676.77-.676 1.554 0 1.12.01 2.029.01 2.298 0 .267.18.577.688.483C17.135 18.177 20 14.434 20 10.017A10.017 10.017 0 0010 0z" clip-rule="evenodd"></path></svg>
+                            GitHub Repo
+                        </a>
+                        <!-- Add a live demo link if applicable -->
+                        <!-- <a href="#" target="_blank" class="text-blue-600 hover:text-blue-800 flex items-center">
+                            <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"></path></svg>
+                            Live Demo
+                        </a> -->
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="card p-6 border border-indigo-200 transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                    <h3 class="text-2xl font-semibold mb-4 gradient-text">Project: File zipper</h3>
+                    <p class="text-gray-700 mb-4">
+                      Introducing my Calculator project, uniquely built with Huffman coding principles. This application leverages Huffman encoding to efficiently represent numbers and operations internally. 
+                    <img src="Screenshot 2025-06-21 151154.png" alt="Project File Zipper" class="w-full h-48 object-cover rounded-md mb-4 shadow-sm">
+                    <div class="flex justify-between items-center text-sm font-medium">
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full">React</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">Node.js</span>
+                        <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full">Security Focus</span>
+                    </div>
+                    <div class="mt-4 flex gap-4">
+                        <a href="https://github.com/vrindagupta25/minor_project_1.git" target="_blank" class="text-indigo-600 hover:text-indigo-800 flex items-center">
+                            <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.417 2.865 8.16 6.839 9.489.5.092.682-.217.682-.483 0-.237-.007-1.033-.01-1.706-2.782.603-3.37-1.34-3.37-1.34-.454-1.154-1.107-1.465-1.107-1.465-.907-.62.069-.608.069-.608 1.004.07 1.532 1.03 1.532 1.03.89 1.529 2.336 1.088 2.906.833.09-.648.351-1.088.636-1.338-2.22-.254-4.555-1.11-4.555-4.943 0-1.09.39-1.98.104-2.685.109-.272.469-1.272-.1-2.656 0 0 .82-.266 2.705 1.025.779-.217 1.61-.326 2.44-.33c.83.004 1.66.113 2.44.33 1.884-1.291 2.705-1.025 2.705-1.025-.572 1.384-.212 2.384-.1 2.656.39 1.706.01 2.595 0 2.685.083.705.47 1.595.39 2.685 0 3.842-2.339 4.685-4.562 4.935-.357.307-.676.77-.676 1.554 0 1.12.01 2.029.01 2.298 0 .267.18.577.688.483C17.135 18.177 20 14.434 20 10.017A10.017 10.017 0 0010 0z" clip-rule="evenodd"></path></svg>
+                            GitHub Repo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="card p-6 border border-indigo-200 transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                    <h3 class="text-2xl font-semibold mb-4 gradient-text">Project: Password Generator</h3>
+                    <p class="text-gray-700 mb-4">
+                      This Password Generator provides on-demand, highly random passwords based on user-defined criteria. It's a testament to building essential security tools effectively
+                    </p>
+                    <img src="pg.jpeg" alt="Project password generator" class="w-full h-48 object-cover rounded-md mb-4 shadow-sm">
+                    <div class="flex justify-between items-center text-sm font-medium">
+                      
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full">Python Scripting</span>
+                    </div>
+                    <div class="mt-4 flex gap-4">
+                        <a href="https://github.com/vrindagupta25/password_generator.git" target="_blank" class="text-indigo-600 hover:text-indigo-800 flex items-center">
+                            <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.417 2.865 8.16 6.839 9.489.5.092.682-.217.682-.483 0-.237-.007-1.033-.01-1.706-2.782.603-3.37-1.34-3.37-1.34-.454-1.154-1.107-1.465-1.107-1.465-.907-.62.069-.608.069-.608 1.004.07 1.532 1.03 1.532 1.03.89 1.529 2.336 1.088 2.906.833.09-.648.351-1.088.636-1.338-2.22-.254-4.555-1.11-4.555-4.943 0-1.09.39-1.98.104-2.685.109-.272.469-1.272-.1-2.656 0 0 .82-.266 2.705 1.025.779-.217 1.61-.326 2.44-.33c.83.004 1.66.113 2.44.33 1.884-1.291 2.705-1.025 2.705-1.025-.572 1.384-.212 2.384-.1 2.656.39 1.706.01 2.595 0 2.685.083.705.47 1.595.39 2.685 0 3.842-2.339 4.685-4.562 4.935-.357.307-.676.77-.676 1.554 0 1.12.01 2.029.01 2.298 0 .267.18.577.688.483C17.135 18.177 20 14.434 20 10.017A10.017 10.017 0 0010 0z" clip-rule="evenodd"></path></svg>
+                            GitHub Repo
+                        </a>
+                    </div>
+                </div>
+
+          
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 md:py-24 px-6 max-w-4xl mx-auto text-center">
+            <h2 class="section-heading text-center mx-auto mb-10">Get In Touch</h2>
+            <p class="text-xl text-gray-700 mb-8">
+                I'm excited about new opportunities and collaborations. Feel free to reach out!
+            </p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="https://www.linkedin.com/in/vrinda-gupta-0b780a252/" target="_blank" class="flex items-center bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300 transform hover:scale-105 shadow-md">
+                    <img src="https://simpleicons.org/icons/linkedin.svg" alt="LinkedIn" class="w-6 h-6 mr-3 filter invert">
+                    LinkedIn
+                </a>
+                <a href="mailto:vrindagupta32@gmail.com" class="flex items-center bg-red-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-red-700 transition duration-300 transform hover:scale-105 shadow-md">
+                    <img src="https://simpleicons.org/icons/gmail.svg" alt="Email" class="w-6 h-6 mr-3 filter invert">
+                    Email Me
+                </a>
+                <a href="https://github.com/vrindagupta25" target="_blank" class="flex items-center bg-gray-800 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-900 transition duration-300 transform hover:scale-105 shadow-md">
+                    <img src="https://simpleicons.org/icons/github.svg" alt="GitHub" class="w-6 h-6 mr-3 filter invert">
+                    GitHub Profile
+                </a>
+                <!-- You can add more social media links here -->
+                <!-- Example for Twitter/X -->
+                <!-- <a href="YOUR_TWITTER_PROFILE_URL" target="_blank" class="flex items-center bg-black text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-900 transition duration-300 transform hover:scale-105 shadow-md">
+                    <img src="https://simpleicons.org/icons/x.svg" alt="X" class="w-6 h-6 mr-3 filter invert">
+                    X (Twitter)
+                </a> -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-6 text-center text-sm rounded-t-3xl shadow-lg">
+        <p>&copy; 2025 Vrinda Gupta. All rights reserved.</p>
+        <p class="mt-2">Designed and Built by Vrinda Gupta.</p>
+    </footer>
+
+    <!-- Simple JavaScript for smooth scrolling (optional, but good UX) -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Basic animation for hero text (requires Tailwind JIT/config, but often works well enough with simple classes)
+        // For more complex animations, consider a dedicated JS library like AOS or Lottie
+        // Tailwind animations: https://tailwindcss.com/docs/animation
+        // Added simple fade-in classes to hero for demonstration
+    </script>
+</body>
+</html>
